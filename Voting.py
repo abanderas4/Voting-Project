@@ -8,10 +8,9 @@ import os
 class Voting(QMainWindow, Ui_MainWindow):
     def __init__(self) -> None:
         """
-        initialize the main window, set up buttons with their respective methods, and
-        load existing CSV data or creating or create CSV file
+        Method that sets up the UI, buttons with their respective methods, and
+        load existing CSV data or create CSV file
         """
-
         super().__init__()
         self.setupUi(self)
         self.list = []
@@ -45,7 +44,7 @@ class Voting(QMainWindow, Ui_MainWindow):
 
     def submit(self) -> None:
         """
-        method that occurs when press submit button that
+        Method that occurs when press submit button that
         collects and appends data to csv file
         """
         if self.Error_message.text() != '':
@@ -88,7 +87,7 @@ class Voting(QMainWindow, Ui_MainWindow):
 
     def total_votes(self) -> None:
         """
-        method that displays the vote count for each candidate
+        Method that displays the vote count for each candidate
         """
         voting_total = (
             'Total Votes:\n'
