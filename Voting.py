@@ -9,7 +9,7 @@ class Voting(QMainWindow, Ui_MainWindow):
     def __init__(self) -> None:
         """
         Method that sets up the UI, buttons with their respective methods, and
-        load existing CSV data or create CSV file
+        loads existing CSV data or creates CSV file
         """
         super().__init__()
         self.setupUi(self)
